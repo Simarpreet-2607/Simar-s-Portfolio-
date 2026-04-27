@@ -79,11 +79,11 @@ const projects = [
 const certs = [
   {
     label: "AWS Certified Cloud Practitioner",
-    href: "https://www.credly.com/badges",
+    href: "https://drive.google.com/file/d/1jcK8UZn3WucnghotRxdPXyXFpFCqejXW/view?usp=sharing",
   },
   {
-    label: "IBM Generative AI Certification",
-    href: "https://www.credly.com/badges",
+    label: "GEN AI - IBM",
+    href: "https://drive.google.com/file/d/1NtSoLIoMmdaM3ZqvqC1ennsmDBBumbof/view?usp=sharing",
   },
 ];
 
