@@ -24,20 +24,55 @@ const navItems = [
 const skillGroups = [
   {
     title: "Tech",
-    items: ["Python", "C/C++", "SQL", "Excel", "AWS", "React"],
+    items: [
+      "Python",
+      "Java",
+      "SQL",
+      "JavaScript",
+      "HTML/CSS",
+      "React",
+      "C/C++",
+      "Excel",
+      "FastAPI",
+    ],
   },
   {
-    title: "Tools",
-    items: ["Power BI", "Figma", "Notion"],
+    title: "Frameworks/Libraries",
+    items: ["Pandas", "NumPy", "Matplotlib", "OpenCV"],
+  },
+  {
+    title: "Cloud & Tools",
+    items: [
+      "AWS",
+      "Docker",
+      "Git",
+      "GitHub",
+      "CI/CD",
+      "Power BI",
+      "Figma",
+      "Notion",
+      "JIRA",
+      "Confluence",
+      "Google Workspace",
+    ],
   },
   {
     title: "Domains",
     items: [
       "Product Management",
-      "A/B Testing",
       "User Research",
+      "Roadmapping",
+      "PRD Writing",
+      "A/B Testing",
       "Funnel Analysis",
       "KPI Tracking",
+      "Cohort Analysis",
+      "Competitive Analysis",
+      "JTBD",
+      "Agile/Scrum",
+      "Opportunity Sizing",
+      "LLM Workflows",
+      "Prompt Design",
     ],
   },
 ];
@@ -79,7 +114,7 @@ const projects = [
 const certs = [
   {
     label: "AWS Certified Cloud Practitioner",
-    href: "https://drive.google.com/file/d/1jcK8UZn3WucnghotRxdPXyXFpFCqejXW/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1jcK8UZn3WucnghotRxdPXyXFpFCqejXW/view?usp=drive_link",
   },
   {
     label: "GEN AI - IBM",
@@ -231,8 +266,8 @@ function Hero() {
             variants={fadeUp}
             className="mt-5 max-w-2xl text-lg leading-8 text-white/62 sm:text-xl"
           >
-            I build AI-powered products that turn user insights into real
-            decisions.
+            I start with the problem, not the solution and I obsess over what
+            frustrates users, then ship what removes it.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-4">
             <a
@@ -273,7 +308,7 @@ function Hero() {
 function About() {
   return (
     <section id="about" className="section">
-      <SectionTitle eyebrow="About" title="Product instincts, built with AI." />
+      <SectionTitle eyebrow="About" title="0→1 every single time" />
       <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <motion.p
           variants={fadeUp}
@@ -294,16 +329,18 @@ function About() {
           className="space-y-5 text-lg leading-8 text-white/66"
         >
           <p>
-            I’m a BTech CSE student working at the intersection of product,
+            I'm a BTech CSE grad who lives at the intersection of product,
             data, and AI.
           </p>
           <p>
-            I focus on understanding user behavior and translating insights into
-            products that actually get used.
+            I don't start with features. I start with friction, the moment a
+            user hits a wall and work backwards from there. Four years of CS
+            fundamentals mean I can reason through the problem technically, not
+            just describe it.
           </p>
           <p>
-            My approach combines structured product thinking, rapid
-            experimentation, and AI-driven workflows.
+            My approach is hands-on: spot the pattern, build the thing. The
+            logic has to hold at every layer - user, system, and business.
           </p>
         </motion.div>
       </div>
@@ -319,7 +356,7 @@ function Skills() {
         title="The toolkit behind the decisions."
         body="A compact blend of engineering fluency, product analysis, and research workflows."
       />
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {skillGroups.map((group, index) => (
           <motion.div
             key={group.title}
