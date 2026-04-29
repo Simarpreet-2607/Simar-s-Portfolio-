@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 
 const resumeUrl =
-  "https://drive.google.com/file/d/1NwPtfwTN59JY40xe9E5LTw0pEk3MYguX/view";
+  "https://drive.google.com/file/d/1y0eTKR-tsVPg1mKEJUwgoaC67zmtLT2O/view?usp=sharing";
 
 const navItems = [
   ["About", "#about"],
